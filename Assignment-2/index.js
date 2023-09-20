@@ -6,7 +6,7 @@ let Routes = {
     "Kiev": "Prague",
     "Skopje": "Paris",
     "Amsterdam": "Barcelona",
-    "Berlin": "Kiev",
+    "Berlin": ["Kiev", "Amsetrdam"],
 }
 
 let cityVisited = {
@@ -16,19 +16,18 @@ let cityVisited = {
     "Prague": false,
     "Berlin": false,
     "Barcelona": false,
-    "Paris": false,
 };
 
 let count = 0;
 let currentCity = "Kiev";
 let ans = ""
 
-while (count < 7) {
+while (count < Object.keys(cityVisited).length) {
     cityVisited[currentCity] = true;
     ans += currentCity + "--->";
-    currentCity = Routes[currentCity];
     count++;
+    currentCity = Routes[currentCity];
 }
 
 console.log(ans);
-console.log(cityVisited);
+
