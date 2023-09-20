@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+
+.logo {
+    width: 500px;
+    height: 500px;
+    background-color: #393333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.centered-rhombus {
+    width: 40%;
+    height: 40%;
+    transform: rotate(45deg);
+    border-right: 20px solid rgb(137, 135, 135);
+    border-top: 20px solid rgb(234, 70, 45);
+    border-left: 20px solid rgb(98, 227, 98);
+    border-bottom: 20px solid rgb(78, 180, 224);
+}
+
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    color: white;
+}
+
+span {
+    color: orange
+}
